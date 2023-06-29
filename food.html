@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Pet Care</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="food.css">
+         
+    </head>
+    <body>
+       <div class="main">
+        <div class="register">
+            <h2>Food Menu</h2>
+            <form id="register" method="post">
+                <label>Pet Name :</label>
+                <br>
+                <input type="text" name="name" id="name" placeholder="enter the breed of your dog">
+                <br><br>
+                <label>Age :</label>
+                <br>
+                <input type="number" name="age" min="0" oninput="validity.valid||(value='')" ; id="name" placeholder="enter the age">
+                <br><br>
+                <label> Gender :</label>
+                <br>
+                &nbsp;&nbsp;&nbsp;
+                <input type="radio" name="gender" id="male">
+                &nbsp;
+                <span id="male">Male</span>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="gender" id="female">
+                &nbsp;
+                <span id="female">Female</span>
+                <br><br>
+                <br><br>
+                <label> Breed :</label>
+                <br>
+                &nbsp;&nbsp;&nbsp;
+                <input type="radio" name="breed" id="golden">
+                &nbsp;
+                <span id="golden">Golden Retriever</span>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="breed" id="japanese">
+                &nbsp;
+                <span id="japanese">Japanese Spitz</span>
+                <br><br>
+                &nbsp;&nbsp;&nbsp;
+                
+                <input type="radio" name="breed" id="german">
+                &nbsp;
+                <span id="german">German Shephard</span>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="breed" id="beagles">
+                &nbsp;
+                <span id="beagles">Beagles</span>
+                <br><br>
+                &nbsp;&nbsp;&nbsp;
+                
+            
+                <input type="radio" name="breed" id="shihtzu">
+                &nbsp;
+                <span id="shihtzu">Shih Tzu</span>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="breed" id="husky">
+                &nbsp;
+                <span id="husky">Siberian Huskies</span>
+                <br><br>
+                &nbsp;&nbsp;&nbsp;
+                <input type="radio" name="breed" id="ragdoll">
+                &nbsp;
+                <span id="ragdoll">Ragdoll</span>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="breed" id="persian">
+                &nbsp;
+                <span id="persian">Persian</span>
+                <br><br>
+                <input type="submit" value="Submit" name="submit" id="submit">
+
+
+            </form>
+        </div>
+       </div>
+
+
+     </body>
+</html>

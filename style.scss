@@ -475,6 +475,87 @@ body{
    }
 }
 
+.hero{
+   height:100%;
+   width:100%;
+   background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(bg.jpg);
+   background-position: center;
+   background-size: cover;
+   position: absolute;
+
+}
+
+.form-box{
+   width: 380px;
+   height: 480px;
+   position: relative;
+   margin: 6% auto;
+   background: #fff;
+   padding: 5px;
+}
+
+.button-box{
+   width: 220px;
+   margin: 35px auto;
+   position: relative;
+   box-shadow: 0 0 20px 9px #ff61241f;
+   border-radius: 30px;
+}
+
+
+.book .row{
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   gap:2rem;
+ }
+ 
+ .book .row .image{
+   flex: 1 1 30rem;
+ }
+ 
+ .book .row .image img{
+   width: 100%;
+ }
+ 
+ 
+ .book .row form{
+   flex:1 1 45rem;
+   background-color: #fff;
+   border:var(--border);
+   box-shadow:var(--box-shadow);
+   text-align: center;
+   padding: 2rem;
+   border-radius: 0.5rem;
+   
+ }
+ 
+ .book .row form h3{
+ 
+   color: #e67e22;
+   padding-bottom: 1rem;
+   font-size: 3rem;
+ }
+ .book .row form .box{
+     width: 100%;
+     margin: 7rem 0;
+     border-radius: .5rem;
+     border:var(--border);
+     font-size: 1.6rem;
+     color: var(--box-shadow);
+     text-transform: none;
+     padding: 1rem;
+ }
+ 
+ .box .row form .btn{
+   padding:1rem 3rem;
+ }
+ 
+ .book form .btnhover {
+   background: #130f40;
+ }
+
+
 
 
 @media (max-width:768px){

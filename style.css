@@ -11,6 +11,13 @@
   transition: 0.2s linear;
 }
 
+:root{
+  --border:#e67e22;
+  --box-shadow:black;
+
+
+}
+
 html {
   font-size: 62.5%;
   overflow-x: hidden;
@@ -254,6 +261,11 @@ body span {
   line-height: 2;
 }
 
+
+
+
+
+
 @media (max-width: 991px) {
   html {
     font-size: 55%;
@@ -388,6 +400,61 @@ body span {
   font-size: 3rem;
   padding-bottom: 1rem;
   color: #130f40;
+}
+
+
+.book .row{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap:0.5rem;
+}
+
+.book .row .image{
+  flex: 1 1 30rem;
+}
+
+.book .row .image img{
+  width: 100%;
+}
+
+
+.book .row form{
+  flex:1 1 45rem;
+  box-sizing: content-box;
+  background-color: #fff;
+  border:black;
+  box-shadow:navajowhite;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  
+}
+
+.book .row form h3{
+
+  color: #e67e22;
+  padding-bottom: 1rem;
+  font-size: 4rem;
+}
+.book .row form .box{
+    width: 100%;
+    margin: 2.5rem 0;
+    border-radius: .5rem;
+    border-style: solid;
+    border:black;
+    font-size: 1.6rem;
+    color: coral;
+    text-transform: none;
+    padding: 1rem;
+}
+
+.box .row form .btn{
+  padding:1rem 3rem;
+}
+
+.book form .btnhover {
+  background: #130f40;
 }
 
 @media (max-width: 768px) {
