@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hostel Booking</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        section
+        {
+            display: flex;
+            width: 100%;
+            height: 100vh;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            background-image: url(book.jpg);
+            background-size: cover;
+            color: black; 
+        }
+        section .div
+        {
+
+            border: 1px solid;
+            width: 25%;
+            height: 71%;
+            border-radius: 5px;
+            background-color: white;
+            box-shadow: inset 0 0 20px black;
+        }
+        form
+        {
+            align-content: center;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .user, .mail, .pass
+        {
+            width: 70%;
+            border: none;
+            height: 15px;
+            padding: 15px;
+            padding-bottom: 5px;
+            padding-left: 5px;
+            color: black;
+            margin-top: 20px;
+            border-bottom: 1px solid grey;
+        }
+        .button{
+            margin-top: 35px;
+            width: 60%;
+            height: 35px;
+            color: white;
+            background-image: linear-gradient;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 40px;
+
+        }
+        h2{
+            margin-top: 25px;
+        }
+    </style>
+    <script type="text/javascript">
+        function validation()
+        {
+            var N,E,P,B,x;
+            N=document.getElementById('Name').value;
+            E=document.getElementById('Email').value;
+            P=document.getElementById('PhoneNumber').value;
+            B=document.getElementById('BookingDate').value;
+            if(N==' ' || E==' ' || P==' ' || B==' ')
+                alert("Please fill all the details");
+            else
+                alert("Your Registration is succesful");
+
+
+        }
+    </script>
+</head>
+<body>
+    <section>
+        <div class="div">
+            <h2>Boooking Form</h2>
+            <form>
+                <input type="text" id="Name" placeholder="Full Name" class="user" name=""><br>
+                <input type="email" id="email" placeholder="Email Id" class="mail" name=""><br>
+                <input type="phone" id="PhoneNumber" placeholder="Number" class="user" min="0" maxlength="10" name=""><br>
+                <input type="Date" id="BookingDate" placeholder="Booking Date(DD/MM/YY)" class="pass" name=""><br><br>
+                <input type="submit" value="Book Now" class="Button" onclick="validation()" name="">
+               
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
